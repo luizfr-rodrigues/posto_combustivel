@@ -12,6 +12,9 @@ type
   end;
 
   TCalculoImpostoAbastecimento = class(TInterfacedObject, ICalculoImpostoAbastecimento)
+  private
+    function RetornarPercentualImpostos: Double;
+
   public
     class function New: ICalculoImpostoAbastecimento;
     procedure Calcular(const AAbastecimento: TAbastecimento);
@@ -22,25 +25,29 @@ implementation
 uses
   System.Math;
 
-const
-  PERCENTUAL_IMPOSTO = 13.00;
-
 { TCalculoImpostoAbastecimento }
 
 procedure TCalculoImpostoAbastecimento.Calcular(const AAbastecimento: TAbastecimento);
 var
-  Valor_Imposto: Double;
+  PercentualImposto, ValorImpostoCalculado: Double;
 begin
-  Valor_Imposto := AAbastecimento.Valor * (PERCENTUAL_IMPOSTO / 100);
-  Valor_Imposto := RoundTo(Valor_Imposto, -2);
+  PercentualImposto := RetornarPercentualImpostos;
 
-  AAbastecimento.Percentual_Imposto := PERCENTUAL_IMPOSTO;
-  AAbastecimento.Valor_Imposto := Valor_Imposto;
+  ValorImpostoCalculado := AAbastecimento.Valor * (PercentualImposto / 100);
+  ValorImpostoCalculado := RoundTo(ValorImpostoCalculado, -2);
+
+  AAbastecimento.Percentual_Imposto := PercentualImposto;
+  AAbastecimento.Valor_Imposto := ValorImpostoCalculado;
 end;
 
 class function TCalculoImpostoAbastecimento.New: ICalculoImpostoAbastecimento;
 begin
   Result := TCalculoImpostoAbastecimento.Create;
+end;
+
+function TCalculoImpostoAbastecimento.RetornarPercentualImpostos: Double;
+begin
+  Result := 13.00;
 end;
 
 end.
