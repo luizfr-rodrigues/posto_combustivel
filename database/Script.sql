@@ -108,6 +108,16 @@ ALTER TABLE TANQUE ADD CONSTRAINT FK_TANQUE_TIPO_COMBUSTIVEL FOREIGN KEY (ID_TIP
 
 
 
+SET TERM ^ ;
+
+
+
+/******************************************************************************/
+/*                            Triggers for tables                             */
+/******************************************************************************/
+
+
+
 /* Trigger: ABASTECIMENTO_BI */
 CREATE TRIGGER ABASTECIMENTO_BI FOR ABASTECIMENTO
 ACTIVE BEFORE INSERT POSITION 0
