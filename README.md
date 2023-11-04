@@ -1,10 +1,10 @@
 # Gerenciador Abastecimento Posto de Combustível
 Projeto teste técnico gerenciador de abastecimento posto combustível
 
-## Técnologias
-1. Delphi 11 Alexandria
-2. Firebird v2.5
-3. Fortes Report para construção de relatório
+## Tecnologias
+1. Delphi 11 Alexandria;
+2. Firebird v2.5;
+3. Fortes Report para construção de relatório.
 
 ## Setup Aplicativo
 Executar o **script.sql** localizado no diretório **database**. No script é necessário ajustar path para criação do banco de dados, conforme o diretório onde está instalado o aplicativo.
