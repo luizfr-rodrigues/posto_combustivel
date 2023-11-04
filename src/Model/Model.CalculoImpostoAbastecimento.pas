@@ -22,11 +22,12 @@ implementation
 uses
   System.Math;
 
+const
+  PERCENTUAL_IMPOSTO = 13.00;
+
 { TCalculoImpostoAbastecimento }
 
 procedure TCalculoImpostoAbastecimento.Calcular(const AAbastecimento: TAbastecimento);
-const
-  PERCENTUAL_IMPOSTO = 13.00;
 var
   Valor_Imposto: Double;
 begin
