@@ -102,6 +102,17 @@
         <DCCReference Include="..\src\Utils\Utils.Constantes.pas"/>
         <DCCReference Include="..\src\Dominio\Interfaces\Dominio.Interfaces.CalculoImposto.pas"/>
         <DCCReference Include="Dominio\Model\Dominio.Model.AbastecimentoTest.pas"/>
+        <DCCReference Include="Infra\DAO\Infra.DAO.BombaDAOTest.pas"/>
+        <DCCReference Include="..\src\Infra\DAO\Infra.DAO.BombaDAO.pas"/>
+        <DCCReference Include="..\src\Infra\DAO\Infra.DAO.BaseDAO.pas"/>
+        <DCCReference Include="..\src\Infra\Conexao\Infra.Conexao.Interfaces.pas"/>
+        <DCCReference Include="..\src\Dominio\Interfaces\Dominio.Interfaces.BombaDAO.pas"/>
+        <DCCReference Include="Infra\Mock\Infra.Mock.QueryMock.pas"/>
+        <DCCReference Include="Infra\Mock\Infra.Mock.QueryFactoryMock.pas"/>
+        <DCCReference Include="Infra\DAO\Infra.DAO.AbastecimentoDAOTest.pas"/>
+        <DCCReference Include="..\src\Infra\DAO\Infra.DAO.AbastecimentoDAO.pas"/>
+        <DCCReference Include="..\src\Dominio\Interfaces\Dominio.Interfaces.AbastecimentoDAO.pas"/>
+        <DCCReference Include="..\src\Dominio\DTO\Dominio.DTO.RelAbastecimentoAgrupadoPorDiaDTO.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

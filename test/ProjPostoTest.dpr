@@ -21,7 +21,18 @@ uses
   Dominio.Model.TipoCombustivel in '..\src\Dominio\Model\Dominio.Model.TipoCombustivel.pas',
   Utils.Constantes in '..\src\Utils\Utils.Constantes.pas',
   Dominio.Interfaces.CalculoImposto in '..\src\Dominio\Interfaces\Dominio.Interfaces.CalculoImposto.pas',
-  Dominio.Model.AbastecimentoTest in 'Dominio\Model\Dominio.Model.AbastecimentoTest.pas';
+  Dominio.Model.AbastecimentoTest in 'Dominio\Model\Dominio.Model.AbastecimentoTest.pas',
+  Infra.DAO.BombaDAOTest in 'Infra\DAO\Infra.DAO.BombaDAOTest.pas',
+  Infra.DAO.BombaDAO in '..\src\Infra\DAO\Infra.DAO.BombaDAO.pas',
+  Infra.DAO.BaseDAO in '..\src\Infra\DAO\Infra.DAO.BaseDAO.pas',
+  Infra.Conexao.Interfaces in '..\src\Infra\Conexao\Infra.Conexao.Interfaces.pas',
+  Dominio.Interfaces.BombaDAO in '..\src\Dominio\Interfaces\Dominio.Interfaces.BombaDAO.pas',
+  Infra.Mock.QueryMock in 'Infra\Mock\Infra.Mock.QueryMock.pas',
+  Infra.Mock.QueryFactoryMock in 'Infra\Mock\Infra.Mock.QueryFactoryMock.pas',
+  Infra.DAO.AbastecimentoDAOTest in 'Infra\DAO\Infra.DAO.AbastecimentoDAOTest.pas',
+  Infra.DAO.AbastecimentoDAO in '..\src\Infra\DAO\Infra.DAO.AbastecimentoDAO.pas',
+  Dominio.Interfaces.AbastecimentoDAO in '..\src\Dominio\Interfaces\Dominio.Interfaces.AbastecimentoDAO.pas',
+  Dominio.DTO.RelAbastecimentoAgrupadoPorDiaDTO in '..\src\Dominio\DTO\Dominio.DTO.RelAbastecimentoAgrupadoPorDiaDTO.pas';
 
 {$IFNDEF TESTINSIGHT}
 var

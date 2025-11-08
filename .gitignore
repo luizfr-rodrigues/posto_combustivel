@@ -69,4 +69,4 @@ __recovery/
 modules/
 
 *.FDB
-test/Win32/Debug/dunitx-results.xml
+bin/dunitx-results.xml
